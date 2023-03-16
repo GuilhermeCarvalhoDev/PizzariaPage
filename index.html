@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="1.0">
+    <title>Front-End Essencial</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+
+        }
+        html{
+    font-size: 62,5%;
+}
+
+        Header{
+            background-color: rgba(255,0,0);
+            color: #fff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial;
+            width: 100%;
+            position:fixed;
+            text-shadow: 2px 2px 3px #000;
+            
+            }
+            li{
+                text-align: center;
+
+            }
+
+
+
+            h3{
+                font-size: 1,9rem;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                margin: 0;
+                padding: 5px;
+            }
+
+            h4{
+                
+                font-size: 1rem;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                margin: 0;
+                padding-left: 5px;
+                padding-bottom: 5px;
+            }
+            body{
+                background-color: rgba(255,250,205);
+                
+                
+            }
+            .container{
+                Display: block;
+                background-color: #fff;
+                width: 95%;
+                box-shadow: 2px 2px 10px rgba(255,99,71);
+               margin:0 auto;
+               max-width: 90%;
+               max-height: 90%;
+               min-width: 0;
+               min-height: 0;
+               margin-top: 50px;
+            }
+            footer{
+                font-family: arial;
+                color: #fff;
+                background-color: rgba(255,0,0);
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-shadow: 2px 2px 3px #000;
+            }
+            p{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: justify;
+                padding: 10px;
+                font-size: 1,6rem;
+            }
+            h1{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: center;
+                padding-top: 10px;
+                font-size: 5.0rem;
+                color: rgba(255, 0, 0, 1);
+                text-shadow:2px 2px 3px #000 ;
+              }
+              @media(min-width: 320px) and (max-width: 450px){
+                 h1{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: left;
+                padding-top: 10px;
+                font-size: 2.0rem;
+                color: rgba(255, 0, 0, 1);
+                text-shadow:2px 2px 3px #000 ;
+              }
+              }
+
+              h2{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: center;
+                padding-top: 10px;
+                font-size: 1.8rem;
+                color: rgba(255, 0, 0, 1);
+                text-shadow:1px 1px #000 ;
+              }
+              .texto-footer{
+                text-align: center;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                padding-top: 10px;
+                font-size: 1.6rem;
+              }
+              .compre{
+                text-align: center;
+                background-color:rgba(255,255,0,0.9);
+                width:12rem;
+                height: 11rem;
+                right: 0;
+                position: fixed;
+                margin-top: 3%;
+                z-index: 1;
+                border-radius: 30px;
+                border: solid #fff;
+                padding-top: 5px;
+              }
+              @media(min-width: 320px) and (max-width: 450px){
+
+                .compre{
+                text-align: center;
+                background-color:rgba(255,255,0,0.9);
+                width:38%;
+                height: 13rem;
+                right: 0;
+                position: fixed;
+                margin-top: 3%;
+                z-index: 1;
+                border-radius: 30px;
+                border: solid #fff;
+                padding-top: 5px;
+                        }
+
+              }
+              button{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                padding: 5px;
+                color: #fff;
+                background-color: rgba(50, 205, 50);
+                border:  solid;
+                border-radius: 30px;
+                width: 80%;
+                }
+                
+              h5{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: center;
+                padding: 1px;
+                font-size: 1.9rem;
+
+              }
+              
+              
+              #grid-container{
+                margin-top: 5px;
+                background-color: rgba(255,99,71);
+                padding: 5px;
+              }
+              .grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                grid-gap:5px;
+                max-width: 1200px;
+                margin: 0 auto;
+              }
+              .grid div{
+                background-color: #fff;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 2px;    
+                }
+                #Formulario{
+                    background-color:rgba(173, 216, 230, 1);
+                }
+                .Formulario-contato{
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif Arial;
+                    font-size: 1,8rem;
+                    padding: 10px;
+                    text-align: left;
+                    margin-left: 5%;
+                    font-weight: bold;
+                }
+                input{
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+                    font-size: 1.7rem;
+                    padding: 5px;
+
+                }
+
+                .dados-formulario{
+                    width: 60%;
+
+                }
+                nav{
+                    text-align: right;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif arial;
+                    font-size: 1.6rem;
+                    margin-right: 2%;
+                    word-spacing: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    transition: all 700ms ease-in-out;
+
+                }
+                a:hover{
+                    background-color: rgba(169, 169, 169, 1);
+
+                }
+                .imagem-grid{
+            width: 22rem;
+            height: 12rem%;
+            border-radius:20px;
+                 }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <!--<nav>
+            <a href="#"> Inicio </a>
+            <a href="#"> Cursos </a>
+            <a href="#"> Sobre </a>
+            
+        </nav>-->
+       
+        
+        <h3>Pizza Souza</h3>
+        <h3>A melhor da região</h3>
+        
+        
+
+    </header>
+
+    <br>
+
+
+    <div class="compre">
+        <br>
+        <h5>Clique aqui e peça por WhatssApp</h5>
+        <br>
+        <button><a href="https://api.whatsapp.com/send?phone=5511959292575&text=Ola%20,%20Gostaria%20de%20fazer%20um%20pedido%20de:"> Comprar</a></button>
+
+    </div>
+    <br><br><br><br>
+    <section Class="container">
+        <h1>Pizzaria Souza<br>30% de desc.<br>De Seg. a Quinta-feira</h1>
+       
+       
+    </section>
+    <br><!---
+    <section Class="container">
+        <h1>TECTREINAMENTOS INFORMÁTICA</h1>
+        <p>
+            Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+        <p>
+            Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+    </section>
+    <br>
+    <br>
+        <h1>TECTREINAMENTOS INFORMÁTICA</h1>
+        <h2>Cursos de Informatica</h2>
+        <p>
+            Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+        <p>
+            Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+        </p>
+    </section>-->
+    <br>
+    <br>
+    
+    <section Class="container" id="grid-container">
+        <h2>Nosso menu</h2>
+        <br><br>
+       
+
+
+    <div class="grid">
+
+    <div> 
+        <h2> Pizza de Calabresa</h2>
+        <img class="imagem-grid" src="img/calabresa.jpg">
+        <button>Clique que pedir esse sabor</button>
+    </div>
+
+    <div> 
+        <h2> Pizza de Frango</h2>
+        <img class="imagem-grid" src="img/frango.jpg">
+         <button>Clique que pedir esse sabor</button>  
+    </div>
+
+    <div> 
+        <h2> Pizza Marguerita</h2>
+        <img class="imagem-grid" src="img/marguerita.jpg">
+         <button>Clique que pedir esse sabor</button>  
+    </div>
+
+    <div>
+        <h2> Pizza de Palmito</h2>
+        <img class="imagem-grid" src="img/palmito.jpg">
+         <button>Clique que pedir esse sabor</button>
+    </div>
+    <div> 
+        <h2> Pizza Mussarela</h2>
+        <img class="imagem-grid" src="img/mussarela.jpg">
+         <button>Clique que pedir esse sabor</button>    
+    </div>
+    <div>
+        <h2> Pizza Portuguesa</h2>
+        <img class="imagem-grid" src="img/portuguesa.jpg">
+         <button>Clique que pedir esse sabor</button>
+    </div>
+
+    </div>
+    
+</section>
+    <br>
+    <!--
+    <section Class="container" id="Formulario">
+        <h2>Selecione um produto para mais informações</h2>
+        <form action="#" method="get" target="_blank">
+            <p class="Formulario-contato">
+                <label for="nome">nome</label><br>
+            <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="insira seu nome">
+            </p>
+
+
+
+
+            <p class="Formulario-contato">
+                <label for="contato">contato</label><br>
+            <input class="dados-formulario" type="tel" id="tel" name="tel " placeholder=" insira seu numero">
+            </p>
+
+            <p class="Formulario-contato">
+
+                <input type="checkbox" id="office" name="office" value="cursos de office">
+                <label for="office">Quero saber mais de cursos de pacote de office</label>
+                <br>
+                <input type="checkbox" id="web" name="web" value="cursos de desenvolvimeto">
+                <label for="web">Quero saber mais de cursos de pacote de desenvolvimento</label>
+                <br>
+
+                <input type="checkbox" id="marketing" name="marketing" value="cursos de marketing">
+                <label for="marketing">Quero saber mais de cursos de pacote de marketing</label>
+                <br>
+                
+
+
+            </p>
+            <p class="Formulario-contato">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+                
+
+
+            </p>
+
+        </form>
+    </section>-->
+    <br>
+
+
+
+    <br><br>
+    <footer>
+        <h3>Pizzaria Souza</h3>
+        <h4>A melhor do Brasil</h4>
+        <br>
+        <p class="texto-footer">Contatos: </p>
+        <p class="texto-footer">xxxxxxxxxx.c@gmail.com</p>
+        <p class="texto-footer">WhatssApp: (11)0000-0000</p>
+    </footer>
+    
+</body>
+</html>
